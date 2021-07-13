@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <input type="text" id="doanhso" placeholder="Nhập doanh số bán hàng" style="width: 200px"><br>
+  <button type="button" id="tinhhh" onclick="tinh()">Tính hoa hồng nhận được</button>
+</table>
+<p id="gtrihoahong"></p>
+<script>
+  function tinh(){
+  let ds =parseInt(document.getElementById("doanhso").value);
+  let result;
+  result=ds*0.15;
+  console.log(result)
+
+  document.getElementById("gtrihoahong").innerText="hoa hong "+ result  ;}
+</script>
+</body>
+</html>

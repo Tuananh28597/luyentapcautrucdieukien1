@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <input type="text" id="sophut" placeholder="số phút khách hàng đã sử dụng " style="width: 190px">
+  <br>
+  <button type="button" onclick="tinh()"style="width: 200px;color: red;background-color:white"> Tính số tiền </button>
+
+</table>
+<script>
+  function tinh() {
+    let phut = parseInt(document.getElementById("sophut").value)
+    let sotien = "";
+    if (phut > 200) {
+      sotien = phut * 1500;
+    } else {
+      sotien = phut * 1100;
+    }
+alert(sotien+'đồng')
+  }
+
+
+</script>
+</body>
+</html>
